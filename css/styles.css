@@ -1,0 +1,394 @@
+/* WordPress Theme Styles */
+h1, p, a {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+*, *::before, *::after{
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header Styles */
+#header-container {
+    background-image: url("../images/header-image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+}
+
+.header-text {
+    padding-top: 40vh;
+}
+
+.header-text h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-text p {
+    padding-bottom: 20px;
+}
+
+.button1, .button2 {
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+}
+
+.header-title {
+    color: white;
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.header-subtext {
+    color: white;
+}
+
+.button1, .button2 {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.button1 {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.button2 {
+    background: #745cf9;
+}
+
+.button1:hover {
+    background: #fff;
+    color: black;
+    transition: 0.5s;
+}
+
+.button2:hover {
+    background: #624FCE;
+    color: white;
+    transition: 0.5s;
+}
+
+/* Section Styles */
+
+#section-one {
+    background-color: white;
+    margin: 100px 0 100px 0;
+}
+
+#section-one img, #section-two img {
+    padding: 20px 0 20px 0;
+}
+
+#section-one img {
+    padding-right: 100px;
+}
+
+
+#section-one, #section-two h1, p, a {
+    padding-bottom: 15px;
+}
+
+#section-one, #section-two p {
+    color: black;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+/* Section Two Styles */
+
+#section-two {
+    background-color: rgb(185, 182, 182);
+}
+
+#section-two  {
+   padding: 100px 0 100px 0;
+}
+
+/* Small Parallax Style */
+
+#small-parallax {
+    background-image: url('../images/ocean2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+.parallax {
+     padding: 150px 0 150px 0;
+     color: white;
+}
+
+.parallax h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.parallax p {
+    color: black;
+    padding-bottom: 20px;
+}
+
+#options {
+    padding-bottom: 10px;
+}
+
+.options-text {
+    padding: 50px 0 50px 0;
+}
+
+.options-text h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.options-text p {
+    padding-bottom: 20px;
+}
+
+.options-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+#projects {
+    background-color: black;
+    padding-bottom: 30px;
+}
+
+.projects-text {
+     color: white;
+}
+
+.projects-text h1 {
+    padding: 50px 0 50px 0;
+}
+
+.projects-text p {
+    padding-bottom: 50px;
+}
+
+.hero{
+    width: 100%;
+    height: 40%;
+    background: #3498db;
+}
+
+figure{
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px #ddd;
+    margin: 1em; 
+}
+
+figcaption{
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    text-align: center;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+figcaption div{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+figcaption div:after{
+    position: absolute;
+    content: "";
+    left: 0; right: 0;
+    bottom: 40%;
+    text-align: center;
+    margin: auto;
+    width: 0%;
+    height: 2px;
+    background: white;
+}
+
+figure img{
+    -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+    -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+figure:hover figcaption{
+    background: rgba(255,255,255,0.3);
+}
+
+figcaption:hover div{
+    opacity: 1; 
+    top: 0;
+}
+
+figcaption:hover div:after{
+    width: 50%;
+}
+
+figure:hover img{
+    -webkit-transform: scale3d(1.2, 1.2, 1);
+          transform: scale3d(1.2, 1.2, 1);
+}
+
+.carousel-parallax {
+    background-image: url('../images/testimonial-parallax.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.quote {
+    color: rgba(0,0,0,.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*-------------------------------*/
+/*    Carousel Fade Transition   */
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: white;
+  border: none;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+.carousel-parallax-header h1, p {
+   color: white;
+}
+
+
+.carousel-parallax-header h1 {
+    padding: 50px 0 50px 0;
+}
+
+.carousel-parallax-header p {
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+#carousel p {
+    color: white;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+#clients {
+    padding-bottom: 50px;
+}
+
+#clients h1 {
+    padding-top: 50px;
+}
+
+#horizontal-scroll ul {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 2%;
+    padding: 0;
+    width: 100%;
+}
+
+#horizontal-scroll li {
+    display:inline-block;
+    padding:10px;
+    margin-right: 2%;
+    width: 49%;
+    list-style-type:none;
+    box-sizing: border-box;
+    white-space: normal;
+    vertical-align: top;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#download-theme {
+    background-color: #F5F3F3;
+    height: 200px;
+}
+
+#download-theme h1 {
+    padding-top: 75px;
+    font-size: 2em;
+}
+
+#download-theme a {
+    margin-top: 75px;
+}
+
+#footer {
+    height: 250px;
+    background-color: black;
+}
+
+#footer p {
+    margin-top: 80px;
+    letter-spacing: 1px;    
+}
